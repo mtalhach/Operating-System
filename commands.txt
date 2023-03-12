@@ -1,0 +1,33 @@
+sudo apt update  (for update)
+
+
+sudo apt install build-essencial (for installing gcc)
+gcc --version (to check the version of gcc)
+
+
+cd .. (path back)
+cd Desktop/ (path forward)
+
+
+touch hello.c  (create file)
+gcc hello.c -o test  (create test file for output)
+./test  (output print)
+
+
+ls
+cat hello.c  (print the file code)
+gcc hello.c
+./a.out   (output print)
+
+
+nano file.c  ctrl+s,ctrl+x    (this is terminal based text editor)
+gcc file.c
+./a.out   (output print)
+
+
+gedit (to open text editor)
+gcc =>for .c
+g++ =>for cpp
+
+
+sudo apt-get install wine

@@ -1,0 +1,66 @@
+				[ar]
+command is used to create, modify and extract the files from the archives.
+ar [OPTIONS] archive_name member_files
+
+ar r arch.a *file.txt (create a archive of files)
+ar rv arch.a *file.txt (create a archive of files & print it)
+ar d arch.a *file.txt (dalete a file from archive)
+ar dv arch.a *file.txt (dalete a file from archive & print it)
+ar t arch.a (print all the files from archive)
+ar p arch.a (print the data of files from archive)
+ar pv arch.a (print the data of files from archive with file name)
+
+
+				[cat]
+at(concatenate) command is very frequently used in Linux. It reads data from the file and gives their content as output. It helps us to create, view, concatenate files
+cat filename
+
+cat file.txt  (print the txt of file)
+cat -n file.txt  (print the txt of file in a new line)
+cat > file.txt (create a new file)
+cat file.txt>file1.txt  (copy the content of file.txt into file1.txt but file1.txt previous text lost)
+cat file.txt>>file1.txt  (copy the content of file.txt into the end of file1.txt)
+tac file.txt  (will display content in reverse order)
+
+
+				[cd]
+cd directory_name  (move to the specific directory)
+cd "directory_name"  (move to the specific directory if it has space b/t name)
+cd New\ Folder (work as same as previous)
+cd /  (clear all directories and move to root)
+cd ~  (clear all directories and move to root)
+cd   (clear all directories and move to root)
+ls  (show all the files in directory)
+pwd  (show the path)
+cd .. (back towards root)
+
+
+				[gcc]
+gcc file.c  (create a compile file)
+gcc file.c -o out  (another way to create compile file)
+
+
+				[mkdir]
+mkdir -v folder (create folder)
+mkdir -p -v first/second/third  (nested folder)
+
+
+				[cp]
+cp file.c file-copy.c  (create copy of file)
+cp file.c ~/Desktop/  (create copy of file on Desktop)
+cp -r folder folder-copy  (to copy the whole folder)
+cp -r folder ~/Desktop/  (to copy the whole folder on Desktop)
+
+
+				[mv]
+mv file1 file2 (move the data of file one into file two & remove file one)
+mv file Desktop (move the File to Desktop)
+mv -i file1 file2 (first press y then action perform)
+
+
+
+
+
+
+
+
