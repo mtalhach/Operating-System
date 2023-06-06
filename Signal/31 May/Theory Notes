@@ -1,0 +1,28 @@
+Paging is a physical view
+Segmentation is a logical view
+
+To combine these two views we do the following
+
+The cpu generates an address with three parts (segment no.)(page no.)(offset)
+
+1. Go to segment table using segment no and find the page table address of that segment
+2. Go to the page table and find the page address of the given page no.
+3. Go to the page and find the address of location using the offset
+
+Half page fragmentation in each segment
+Each segment has a seperate page table
+
+Swapping
+
+Allocate some area in hard drive for processes
+This area is swap space
+Normal files cannot be stored in this area
+The storage is formatted differently from other hard drive storage
+
+If a process is waiting (Whether due to i/o or sleep) an image of the process is swapped in hard drive swap space and some other process can use the memory in the meantime
+
+The pages of processess are swapped from RAM to Hard Drive
+
+Transfer from hard disk to ram and vice versa is a big time overhead
+
+The system maintains a seperate ready queue for swap space programs

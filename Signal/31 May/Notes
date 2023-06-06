@@ -1,0 +1,23 @@
+signal --> Generated from software
+alarm(time in seconds) --> anormally terminates the program when the alarm sounds
+
+ctrl+c also generates an interrupt (sigint = signal interrupt)
+
+if a handler is used then the termination (from a signal or ctrl+c) does not occur (Similar to a try catch)
+
+the signal handler calls the user defined function in case of a signal catch
+
+A singal is a bit-field --> There is a bit for every signal
+
+struct sigaction act
+act.sa_handler = my_sig_handler (User defined function)
+A handler is assigned for each signal
+
+ps -aux | grep pts/0 --> to find process number
+kill -s [signal number] [process number] --> command to send signals
+
+kill signal cannot be handles or blocked
+
+
+Shell Scripting
+#!/bin/bash --> shell name/path important in first lines
